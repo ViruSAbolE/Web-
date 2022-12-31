@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <script src="love_calc.js"></script>
+    <script src="bmi_calc.js"></script>
+    <script src="leap_year.js"></script>
+    <script src="dinner_payment.js"></script>
+</header>
+
+<body>
+    <h4>Любовный календарь</h4>
+    <input type="button" onclick="enterFirstName()" value="Введите его/ее имя"><br><br>
+    <input type="button" onclick="enterSecondName()" value="Введите его/ее имя"><br><br>
+    <input type="button" onclick="calc()" value="Узнать результат"><br><br><br><br>
+
+    <h4>BMI Калькулятор</h4>
+    <p>Введите вес</p><input type="text" onchange="enterWeight(this.value)"><br>
+    <p>Введите рост</p><input type="text" onchange="enterHeight(this.value)"><br><br>
+    <input type="button" onclick="calc_bmi()" value="Узнать результат"><br><br>
+
+    <h4>Високосный год</h4>
+    <p>Введите год</p><input type="text" onchange="enterYear(this.value)"><br><br>
+    <input type="button" onclick="calc_year()" value="Узнать результат"><br><br>
+
+    <h4>Кто оплачивает ужин?</h4>
+    <p>Введите список</p><input type="text" onchange="enterArr(this.value)"><br><br>
+    <input type="button" onclick="calcDinnerPaymenter()" value="Узнать результат"><br><br>
+</body>
+
+</html>
